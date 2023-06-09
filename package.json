@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run":"npx cypress run --headed",
+    "cy:multi:browser":"npm run cy:run -- --browser chrome & npm run cy:run -- --browser firefox" 
   },
-  "author": "",
+  "author": "KV-",
   "license": "ISC",
   "dependencies": {
     "cypress": "^12.14.0"
